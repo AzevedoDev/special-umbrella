@@ -4,20 +4,6 @@ import Logo, { LogoProps } from '.'
 export default {
   title: 'Logo',
   component: Logo,
-  argTypes: {
-    size: {
-      control: {
-        type: 'select',
-        options: ['small', 'normal']
-      }
-    },
-    color: {
-      control: {
-        type: 'select',
-        options: ['white', 'black']
-      }
-    }
-  },
   parameters: {
     backgrounds: {
       default: 'mega',
