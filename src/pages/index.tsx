@@ -1,5 +1,5 @@
-import Main from 'components/Main'
+import Logo from 'components/Logo'
 
 export default function Home() {
-  return <Main />
+  return <Logo />
 }
