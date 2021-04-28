@@ -3,18 +3,18 @@ import * as S from './styles'
 export type LogoProps = {
   color?: 'white' | 'black'
   size?: 'normal' | 'small'
-  onMobile?: boolean
+  isMobile?: boolean
   title?: string
 }
 
 const Logo = ({
   color = 'white',
   size = 'normal',
-  onMobile = false,
+  isMobile = false,
   title = 'Sena'
 }: LogoProps) => (
-  <S.Wrapper color={color} onMobile={onMobile}>
-    <S.WrapperSvg color={color} size={size} onMobile={onMobile}>
+  <S.Wrapper color={color} isMobile={isMobile} data-testid="logo-component">
+    <S.WrapperSvg color={color} size={size} isMobile={isMobile}>
       <svg
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

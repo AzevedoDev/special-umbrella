@@ -13,17 +13,17 @@ const wrapperModifiers = {
 }
 
 export const WrapperSvg = styled.div<LogoProps>`
-  ${({ theme, color, size, onMobile }) => css`
+  ${({ theme, color, size, isMobile }) => css`
     color: ${theme.colors[color!]};
     ${!!size && wrapperModifiers[size]};
-    ${!onMobile && `margin-right: ${theme.spacings.small}`}
+    ${!isMobile && `margin-right: ${theme.spacings.small}`}
   `}
 `
 export const Wrapper = styled.div<LogoProps>`
-  ${({ onMobile, theme, color }) => css`
+  ${({ isMobile, theme, color }) => css`
     display: flex;
     color: ${theme.colors[color!]};
-    flex-direction: ${onMobile ? 'column' : 'row'};
+    flex-direction: ${isMobile ? 'column' : 'row'};
     justify-content: center;
     align-items: center;
   `}
