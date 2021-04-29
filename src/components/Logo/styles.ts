@@ -6,6 +6,8 @@ export const WrapperSvg = styled.div<LogoProps>`
     width: 6rem;
     height: 6rem;
     color: ${theme.colors.white};
+    font-family: ${theme.font.family};
+
     ${!isMobile && `margin-right: ${theme.spacings.small}`}
   `}
 `

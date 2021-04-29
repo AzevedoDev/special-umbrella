@@ -5,6 +5,11 @@ import { renderWithTheme } from 'utils/tests/helpers'
 import Logo from '.'
 
 describe('<Logo />', () => {
+  it('should render and match with snapshot', () => {
+    renderWithTheme(<Logo />)
+    expect(screen.getByLabelText(/Sena/i)).toMatchSnapshot()
+  })
+
   it('should render a white logo by default', () => {
     renderWithTheme(<Logo />)
     expect(screen.getByLabelText(/Sena/i).parentElement).toHaveStyle({

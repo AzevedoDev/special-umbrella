@@ -8,7 +8,7 @@ export default {
   },
   font: {
     family:
-      "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     regular: 'regular',
     normal: 500,
     bold: 700,
@@ -22,7 +22,7 @@ export default {
     }
   },
   colors: {
-    mainBg: '#454545',
+    mainBg: '#EFEFEF',
     white: '#FFFFFF',
     black: '#333333',
     mega: '#6BEFA3',
@@ -48,4 +48,4 @@ export default {
     modal: 40,
     alwaysOnTop: 50
   }
-}
+} as const

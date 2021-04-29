@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> should render and match with snapshot 1`] = `
+<select
+  aria-label="select-lotteries"
+>
+  <option
+    value="0"
+  >
+    MEGA-SENA
+  </option>
+  <option
+    value="1"
+  >
+    QUINA
+  </option>
+</select>
+`
