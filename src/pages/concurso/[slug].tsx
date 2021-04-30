@@ -10,12 +10,24 @@ import {
   GetLoteriaAndConcursosQuery,
   GetLoteriaQuery,
   GetConcursoQuery,
-  GetConcursoQueryVariables
+  GetConcursoQueryVariables,
+  Concurso,
+  Loteria
 } from 'graphql/generated/graphql'
 import { GetStaticProps } from 'next'
 import { slugify } from 'utils/helper'
 
-export default function Lotteries({ concurso, loterias, loteriaFiltrado }) {
+type LotteriesProps = {
+  concurso: Concurso
+  loterias: Loteria[]
+  loteriaFiltrado: { id: string; nome: string }
+}
+
+export default function Lotteries({
+  concurso,
+  loterias,
+  loteriaFiltrado
+}: LotteriesProps) {
   const router = useRouter()
   if (router.isFallback) return null
   return (
