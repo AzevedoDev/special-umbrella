@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
-  ${({ theme }) => css`
-    background-color: ${theme.colors.mega};
+  ${({ theme, color }) => css`
+    background-color: ${theme.colors[color]};
     width: 100%;
     height: 100%;
     display: flex;

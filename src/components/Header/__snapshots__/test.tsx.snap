@@ -2,7 +2,6 @@
 
 exports[`<Header /> should render the heading 1`] = `
 .c0 {
-  background-color: #6BEFA3;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -113,6 +112,7 @@ exports[`<Header /> should render the heading 1`] = `
 
 <main
   class="c0"
+  color="mega-sena"
 >
   <div
     class="c1"
@@ -125,6 +125,31 @@ exports[`<Header /> should render the heading 1`] = `
       >
         MEGA-SENA
       </option>
+      <option
+        value="1"
+      >
+        QUINA
+      </option>
+      <option
+        value="2"
+      >
+        LOTOFÁCIL
+      </option>
+      <option
+        value="3"
+      >
+        LOTOMANIA
+      </option>
+      <option
+        value="4"
+      >
+        TIMEMANIA
+      </option>
+      <option
+        value="5"
+      >
+        DIA DE SORTE
+      </option>
     </select>
   </div>
   <div
@@ -135,7 +160,7 @@ exports[`<Header /> should render the heading 1`] = `
       class="c3"
     >
       <svg
-        aria-label="MEGA-SENA"
+        aria-label="mega-sena"
         fill="none"
         role="img"
         viewBox="0 0 65 64"
@@ -157,7 +182,8 @@ exports[`<Header /> should render the heading 1`] = `
     class="c5"
     color="white"
   >
-    CONCURSO Nº 4560
+    CONCURSO Nº 
+    1
   </p>
 </main>
 `

@@ -21,7 +21,7 @@ const Logo = ({ isMobile = false, title = 'Sena' }: LogoProps) => (
         />
       </svg>
     </S.WrapperSvg>
-    <S.Text>{title}</S.Text>
+    <S.Text>{title.toUpperCase()}</S.Text>
   </S.Wrapper>
 )
 

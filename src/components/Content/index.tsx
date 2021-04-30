@@ -1,16 +1,18 @@
 import DrawnLotteryNumber from 'components/DrawnLotteryNumber'
 import Text from 'components/Text'
+import { Concurso } from 'graphql/generated/graphql'
 import * as S from './styles'
 
-const Content = () => (
+type ContentProps = {
+  concurso: Concurso
+}
+
+const Content = ({ concurso }: ContentProps) => (
   <S.Wrapper>
     <S.DrawnLotteryNumbersWrapper>
-      <DrawnLotteryNumber lotteryNumber="01" />
-      <DrawnLotteryNumber lotteryNumber="01" />
-      <DrawnLotteryNumber lotteryNumber="01" />
-      <DrawnLotteryNumber lotteryNumber="01" />
-      <DrawnLotteryNumber lotteryNumber="01" />
-      <DrawnLotteryNumber lotteryNumber="01" />
+      {concurso.numeros?.map((lotteryNumber: string | null | undefined) => (
+        <DrawnLotteryNumber key={lotteryNumber} lotteryNumber={lotteryNumber} />
+      ))}
     </S.DrawnLotteryNumbersWrapper>
     <S.TextWrapper>
       <Text color="black">

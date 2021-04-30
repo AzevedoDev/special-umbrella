@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export type DrawnLotteryNumberProps = {
-  lotteryNumber: string
+  lotteryNumber: string | null | undefined
 }
 
 const DrawnLotteryNumber = ({ lotteryNumber }: DrawnLotteryNumberProps) => (

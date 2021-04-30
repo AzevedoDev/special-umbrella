@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export type TextProps = {
-  children: string
+  children: React.ReactNode
   color?: 'white' | 'black'
 }
 

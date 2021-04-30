@@ -27,10 +27,10 @@ export default {
     black: '#333333',
     mega: '#6BEFA3',
     quina: '#8666EF',
-    lotoFacil: '#DD7AC6',
-    lotoMania: '#FFAB64',
-    timeMania: '#5AAD7D',
-    diaSorte: '#BFAF83'
+    lotofacil: '#DD7AC6',
+    lotomania: '#FFAB64',
+    timemania: '#5AAD7D',
+    diasorte: '#BFAF83'
   },
   spacings: {
     xxsmall: '0.8rem',
