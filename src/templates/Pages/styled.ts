@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -6,4 +7,9 @@ export const Wrapper = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100%;
+  ${media.greaterThan('medium')`
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  `}
 `

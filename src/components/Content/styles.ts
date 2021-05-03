@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
@@ -13,6 +14,13 @@ export const Wrapper = styled.main`
     margin-top: -6.3rem;
     padding: 3.8rem;
     font-family: ${theme.font.family};
+    ${media.greaterThan('small')`
+      clip-path: ellipse(180% 100% at left);
+      margin-top: 0;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    `}
   `}
 `
 export const DrawnLotteryNumbersWrapper = styled.div`
@@ -24,6 +32,10 @@ export const DrawnLotteryNumbersWrapper = styled.div`
   width: 100%;
   height: 100%;
   padding-bottom: 8.4rem;
+  ${media.greaterThan('medium')`
+    max-width: 64rem;
+    padding-bottom: 0;
+  `}
 `
 
 export const TextWrapper = styled.div`
