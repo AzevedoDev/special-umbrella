@@ -48,4 +48,11 @@ describe('<Header />', () => {
 
     expect(container.firstChild).toMatchSnapshot()
   })
+  it('should render default values', () => {
+    renderWithTheme(<Header loterias={loterias} />)
+
+    expect(
+      screen.getByRole('heading', { name: /MEGA-SENA/i })
+    ).toBeInTheDocument()
+  })
 })
