@@ -3,7 +3,7 @@ import Text from 'components/Text'
 import { Concurso } from 'graphql/generated/graphql'
 import * as S from './styles'
 
-type ContentProps = {
+export type ContentProps = {
   concurso: Concurso
 }
 

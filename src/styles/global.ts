@@ -13,11 +13,15 @@ const GlobalStyles = createGlobalStyle`
     html {
       font-size: 62.5%;
     }
-
+    html,
+    body,
+    #__next {
+      height: 100%;
+      min-height: 100vh;
+    }
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
-      background-color: ${theme.colors.mega};
     }
   `}
 `

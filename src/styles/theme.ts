@@ -25,12 +25,12 @@ export default {
     mainBg: '#EFEFEF',
     white: '#FFFFFF',
     black: '#333333',
-    mega: '#6BEFA3',
+    megasena: '#6BEFA3',
     quina: '#8666EF',
     lotofacil: '#DD7AC6',
     lotomania: '#FFAB64',
     timemania: '#5AAD7D',
-    diasorte: '#BFAF83'
+    diadesorte: '#BFAF83'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -49,3 +49,11 @@ export default {
     alwaysOnTop: 50
   }
 } as const
+
+export type Colors =
+  | 'megasena'
+  | 'quina'
+  | 'lotofacil'
+  | 'lotomania'
+  | 'timemania'
+  | 'diadesorte'

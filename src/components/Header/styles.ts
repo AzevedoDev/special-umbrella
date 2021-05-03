@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components'
+import { Colors } from 'styles/theme'
 
 export const Wrapper = styled.main`
   ${({ theme, color }) => css`
-    background-color: ${theme.colors[color]};
+    background-color: ${theme.colors[color as Colors]};
     width: 100%;
+    min-height: 45rem;
     height: 100%;
     display: flex;
     flex-direction: column;

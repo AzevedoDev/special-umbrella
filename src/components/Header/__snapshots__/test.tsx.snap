@@ -2,7 +2,9 @@
 
 exports[`<Header /> should render the heading 1`] = `
 .c0 {
+  background-color: #6BEFA3;
   width: 100%;
+  min-height: 45rem;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -112,7 +114,7 @@ exports[`<Header /> should render the heading 1`] = `
 
 <main
   class="c0"
-  color="mega-sena"
+  color="megasena"
 >
   <div
     class="c1"
