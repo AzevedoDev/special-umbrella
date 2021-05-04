@@ -3,118 +3,67 @@
 exports[`<Header /> should render the heading 1`] = `
 .c0 {
   background-color: #6BEFA3;
-  width: 100%;
-  min-height: 45rem;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: 6.3rem;
-  padding-bottom: 9.3rem;
+  width: 100%;
   font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-}
-
-.c3 {
-  width: 6rem;
-  height: 6rem;
-  color: #FFFFFF;
-  font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #FFFFFF;
+  z-index: 10;
 }
 
 .c1 {
-  position: relative;
-  width: 100%;
-  max-width: 23rem;
-  height: 5rem;
-  color: #333333;
-  background-color: #FFFFFF;
-  border-radius: 0.6rem;
-  box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.05);
+  display: none;
 }
 
-.c1:hover {
-  box-shadow: #848484 0 0 0.1rem 0.1rem;
-}
-
-.c1:focus {
-  box-shadow: #848484 0 0 0.1rem 0.1rem;
-}
-
-.c1 select {
-  width: 100%;
-  height: 100%;
-  padding: 0 3.3rem;
-  color: #333333;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-}
-
-.c1::after {
-  position: absolute;
-  top: 2.2rem;
-  right: 2rem;
-  width: 1.1rem;
-  height: 0.6rem;
-  pointer-events: none;
-  content: '';
-  background-color: #848484;
-  -webkit-clip-path: polygon(100% 0%,0 0%,50% 100%);
-  clip-path: polygon(100% 0%,0 0%,50% 100%);
-}
-
-.c5 {
-  font-size: 1.4rem;
-  color: #FFFFFF;
-  font-weight: 500;
-  text-align: center;
-  font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+.c2 {
+  display: none;
 }
 
 @media (min-width:768px) {
   .c0 {
-    max-width: 64rem;
+    max-width: 61.5rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 6.3rem;
+    min-height: 45rem;
+    padding-bottom: 4.1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 6.3rem;
+    padding-left: 9.4rem;
+    min-height: 100%;
+    max-width: 61.5rem;
+    padding-bottom: 9.3rem;
   }
 }
 
@@ -125,73 +74,41 @@ exports[`<Header /> should render the heading 1`] = `
   <div
     class="c1"
   >
-    <select
-      aria-label="select-lotteries"
+    <div
+      data-testid="Mock Select"
+    />
+    <div
+      data-testid="Mock Logo"
+    />
+    <p
+      data-testid="Mock Text"
     >
-      <option
-        value="0"
-      >
-        MEGA-SENA
-      </option>
-      <option
-        value="1"
-      >
-        QUINA
-      </option>
-      <option
-        value="2"
-      >
-        LOTOFÁCIL
-      </option>
-      <option
-        value="3"
-      >
-        LOTOMANIA
-      </option>
-      <option
-        value="4"
-      >
-        TIMEMANIA
-      </option>
-      <option
-        value="5"
-      >
-        DIA DE SORTE
-      </option>
-    </select>
+      mega-sena
+    </p>
   </div>
   <div
     class="c2"
-    data-testid="logo-component"
   >
     <div
-      class="c3"
+      data-testid="Mock Select"
+    />
+    <div
+      data-testid="Mock Logo"
+    />
+    <div
+      class=""
     >
-      <svg
-        aria-label="mega-sena"
-        fill="none"
-        role="img"
-        viewBox="0 0 65 64"
-        xmlns="http://www.w3.org/2000/svg"
+      <p
+        data-testid="Mock Text"
       >
-        <path
-          d="M21.517 63.154a9.26 9.26 0 009.241-9.241V33.271H9.206a9.243 9.243 0 103.5 17.84 9.234 9.234 0 008.811 12.043zM42.623.754a9.26 9.26 0 00-9.24 9.241v20.64h21.549a9.241 9.241 0 10-3.5-17.84A9.235 9.235 0 0042.623.754zM21.517.754a9.26 9.26 0 019.241 9.241v20.641H9.206a9.24 9.24 0 113.5-17.84A9.236 9.236 0 0121.517.754zm21.106 62.4a9.259 9.259 0 01-9.24-9.242V33.271h21.549a9.242 9.242 0 11-3.5 17.84 9.236 9.236 0 01-8.809 12.043z"
-          fill="currentColor"
-        />
-      </svg>
+        mega-sena
+      </p>
+      <p
+        data-testid="Mock Text"
+      >
+        mega-sena
+      </p>
     </div>
-    <h1
-      class="c4"
-    >
-      MEGA-SENA
-    </h1>
   </div>
-  <p
-    class="c5"
-    color="white"
-  >
-    CONCURSO Nº 
-    1
-  </p>
 </main>
 `

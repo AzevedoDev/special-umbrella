@@ -27,8 +27,16 @@ describe('<Select />', () => {
   it('should render and match with snapshot', () => {
     renderWithTheme(<Select lotteries={lotteries} />)
 
-    expect(screen.getByLabelText(/select-lotteries/i)).toBeInTheDocument()
-    expect(screen.getByLabelText(/select-lotteries/i)).toMatchSnapshot()
+    expect(
+      screen.getByRole('combobox', {
+        name: /select-lotteries/i
+      })
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('combobox', {
+        name: /select-lotteries/i
+      })
+    ).toMatchSnapshot()
   })
 
   it('should select a QUINA option', () => {

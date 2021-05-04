@@ -8,6 +8,6 @@ module.exports = withPWA({
     disable: !isProd
   },
   future: {
-    webpack5: true
+    webpack5: false
   }
 })

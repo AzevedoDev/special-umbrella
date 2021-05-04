@@ -15,7 +15,6 @@ export const Wrapper = styled.div<LogoProps>`
   ${({ isMobile }) => css`
     display: flex;
     flex-direction: ${isMobile ? 'column' : 'row'};
-    justify-content: center;
     align-items: center;
   `}
 `

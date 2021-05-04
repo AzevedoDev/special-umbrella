@@ -2,6 +2,9 @@
 
 exports[`<LotterySortedNumber /> should render the heading 1`] = `
 .c0 {
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 700;
   background-color: #FFFFFF;
   width: 7.6rem;
   height: 7.6rem;
@@ -22,19 +25,9 @@ exports[`<LotterySortedNumber /> should render the heading 1`] = `
   font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
 }
 
-.c1 {
-  color: #333333;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-<main
+<p
   class="c0"
 >
-  <p
-    class="c1"
-  >
-    01
-  </p>
-</main>
+  01
+</p>
 `

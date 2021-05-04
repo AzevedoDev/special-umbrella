@@ -5,9 +5,7 @@ export type DrawnLotteryNumberProps = {
 }
 
 const DrawnLotteryNumber = ({ lotteryNumber }: DrawnLotteryNumberProps) => (
-  <S.Wrapper>
-    <S.SortedNumber>{lotteryNumber}</S.SortedNumber>
-  </S.Wrapper>
+  <S.SortedNumber>{lotteryNumber}</S.SortedNumber>
 )
 
 export default DrawnLotteryNumber

@@ -20,6 +20,7 @@ export default function TemplatePage({
         loterias={loterias}
         concourseNumber={concurso.id}
         title={loteriaFiltrado.nome}
+        concourseData={concurso.data}
       />
       <Content concurso={concurso} />
     </S.Wrapper>

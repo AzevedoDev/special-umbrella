@@ -37,7 +37,25 @@ const concurso = {
 }
 const loteriaFiltrado = { id: '1', nome: 'mega-sena' }
 
-describe('<Select />', () => {
+jest.mock('components/Header', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Header"></div>
+    }
+  }
+})
+
+jest.mock('components/Content', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Content"></div>
+    }
+  }
+})
+
+describe('<TemplatePage />', () => {
   it('should render and match with snapshot', () => {
     renderWithTheme(
       <TemplatePage
@@ -47,7 +65,7 @@ describe('<Select />', () => {
       />
     )
 
-    expect(screen.getByDisplayValue(/mega-sena/i)).toBeInTheDocument()
-    expect(screen.getByDisplayValue(/mega-sena/i)).toMatchSnapshot()
+    expect(screen.getByTestId('Mock Header')).toBeInTheDocument()
+    expect(screen.getByTestId('Mock Content')).toBeInTheDocument()
   })
 })
