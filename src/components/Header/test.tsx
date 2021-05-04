@@ -84,7 +84,7 @@ describe('<Header />', () => {
   it('should render correctly default props ', () => {
     renderWithTheme(
       <Header loterias={loterias} concourseData={loteriaFiltrado.data} />
-    ).debug()
+    )
 
     expect(screen.getAllByText('mega-sena')[0]).toBeInTheDocument()
   })
