@@ -1,6 +1,6 @@
 import { GraphQLClient } from 'graphql-request'
 
-const endpoint = process.env.GRAPHQL_HOST || ''
+const endpoint = 'https://brainn-api-loterias.herokuapp.com/graphql'
 
 const client = new GraphQLClient(endpoint, { headers: {} })
 

@@ -1,5 +1,3 @@
-/// <reference types="cypress"/>
-
 /* eslint-disable no-undef */
 beforeEach(() => {
   cy.viewport(1280, 900)

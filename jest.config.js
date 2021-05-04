@@ -1,6 +1,6 @@
 module.exports = {
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/cypress/'],
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
@@ -9,6 +9,7 @@ module.exports = {
     '!src/graphql/**/*.ts',
     '!src/**/mock.ts',
     '!src/pages/**/*.tsx',
+    '!cypress/**/*.tsx',
     '!src/styles/**/*.ts'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
