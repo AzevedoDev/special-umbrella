@@ -15,10 +15,14 @@ This project uses:
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [Cypress](https://www.cypress.io/)
+- [Graphql Code Generator](https://www.graphql-code-generator.com/)
+- [Graphql](https://graphql.org/)
+- [Graphql Request](https://github.com/prisma-labs/graphql-request)
 
 ## Getting Started
 
-First, run the development server:
+First, you need install all dependencies with `yarn or npm i` , after you can run the development server:
 
 ```bash
 npm run dev
@@ -27,6 +31,54 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Navigate with static pages
+
+First, run the build:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Second, run next server with:
+
+```bash
+npm run start
+# or
+yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Testing with Cypress
+
+First, do you need run:
+
+```bash
+npm run build & npm run start
+# or
+yarn build & yarn start
+```
+
+after that, you can run:
+
+```bash
+npm run cypress
+# or
+yarn cypress
+```
+
+## Testing with Jest
+
+First, do you need run:
+
+```bash
+npm run test
+# or
+yarn test
+```
 
 ## Commands
 
@@ -38,4 +90,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `test:watch`: runs jest in watch mode
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
-
+- `cypress`: runs end-to-end tests

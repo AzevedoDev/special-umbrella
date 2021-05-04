@@ -13,6 +13,7 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "postinstall": "husky install",
+    "cypress": "cypress run",
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "lint-staged": {
@@ -29,13 +30,14 @@
     "nextjs-progressbar": "^0.0.9",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-hook-form": "^7.3.5",
     "styled-components": "5.2.3",
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/preset-typescript": "^7.13.0",
+    "@cypress/react": "^5.4.2",
+    "@cypress/webpack-dev-server": "^1.1.6",
     "@graphql-codegen/add": "^2.0.2",
     "@graphql-codegen/cli": "1.21.4",
     "@graphql-codegen/typescript": "1.22.0",
@@ -53,6 +55,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
+    "cypress": "^7.2.0",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
